@@ -160,7 +160,7 @@ def dashboard():
     elif(a=="b"):
         b= input("""
         =============================================
-                       Tabahkan data
+                       Tambahkan data
         =============================================
         Silahkan Tabahkan data yang anda inginkan:
         [a] Pendapatan
@@ -186,7 +186,6 @@ def dashboard():
         if (b == "a"):
             c=input("apakah sudah tau id_pendapatan yang di ubah \n [a]sudah [b] belum \n masukkan hurufnya :")
             if (c=="a") :
-                readTabelPendapatan()
                 id_pendapatan=int(input("silahkan input id_pengeluaran"))
                 tanggal = input("silahkan input tanggal baru(DD-MM-YYYY)")
                 namaPendapatan = input("silahkan input namaPengeluaran baru")
@@ -200,6 +199,7 @@ def dashboard():
 
                 readTabelPendapatan()
             else :
+                readTabelPendapatan()
                 id_pendapatan = int(input("silahkan input id_pengeluaran"))
                 tanggal = input("silahkan input tanggal baru(DD-MM-YYYY)")
                 namaPendapatan = input("silahkan input namaPengeluaran baru")
@@ -215,7 +215,7 @@ def dashboard():
         else:
             c=input("apakah sudah tau id_pengeluaran yang di ubah \n [a]sudah [b] belum \n masukkan hurufnya :")
             if (c=="a"):
-                readTabelPengeluaran()
+
                 id_pengeluaran = int(input("silahkan input id_pengeluaran"))
                 tanggal = input("silahkan input tanggal baru(DD-MM-YYYY)")
                 namaPengeluaran = input("silahkan input namaPengeluaran baru")
@@ -228,6 +228,7 @@ def dashboard():
 
                 readTabelPengeluaran()
             else :
+                readTabelPengeluaran()
                 id_pengeluaran = int(input("silahkan input id_pengeluaran"))
                 tanggal = input("silahkan input tanggal baru(DD-MM-YYYY)")
                 namaPengeluaran = input("silahkan input namaPengeluaran baru")
